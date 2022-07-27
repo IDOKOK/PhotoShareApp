@@ -39,8 +39,8 @@ if (isset($_GET['t_id'])) {
 
 <body>
 
- <!-- <?php include(//ROOT_PATH . "/app/includes/header.php"); ?> -->
- <!--  <?php include(//ROOT_PATH . "/app/includes/messages.php"); ?> -->
+ // <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+ // <?php include(ROOT_PATH . "/app/includes/messages.php"); ?>
 
 
 
@@ -57,7 +57,7 @@ if (isset($_GET['t_id'])) {
 
         <?php foreach ($posts as $post): ?>
           <div class="post">
-         <!-- <img src="<?php echo// BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" class="slider-image"> -->
+           // <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" class="slider-image">
             <div class="post-info">
               <h4><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h4>
               <i class="far fa-user"> <?php echo $post['username']; ?></i>
@@ -115,7 +115,7 @@ if (isset($_GET['t_id'])) {
           <h2 class="section-title">Topics</h2>
           <ul>
             <?php foreach ($topics as $key => $topic): ?>
-              <!-- <li><a href="<?php echo BASE_URL . '/index.php?t_id=' . $topic['id'] . '&name=' . $topic['name'] ?>"><?php echo $topic['name']; ?></a></li> -->
+              <li><a href="<?php echo BASE_URL . '/index.php?t_id=' . $topic['id'] . '&name=' . $topic['name'] ?>"><?php echo $topic['name']; ?></a></li>
             <?php endforeach; ?>
           </ul>
         </div>
@@ -128,7 +128,7 @@ if (isset($_GET['t_id'])) {
   </div>
   <!-- // Page Wrapper -->
 
-  <!-- <?php include(ROOT_PATH . "/app/includes/footer.php"); ?> -->
+  <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
 
 
   <!-- JQuery -->
