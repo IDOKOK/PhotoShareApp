@@ -1,12 +1,11 @@
 <header>
     <a href="<?php echo BASE_URL . '/index.php' ?>" class="logo">
-      <h1 class="logo-text"><span>Awa</span>Inspires</h1>
+      <h1 class="logo-text"><span>PhotoShare</span>App</h1>
     </a>
     <i class="fa fa-bars menu-toggle"></i>
     <ul class="nav">
       <li><a href="<?php echo BASE_URL . '/index.php' ?>">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
+      <li><a href="#">About Us</a></li>
 
       <?php if (isset($_SESSION['id'])): ?>
         <li>
