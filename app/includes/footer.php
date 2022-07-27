@@ -54,7 +54,7 @@
     </div>
 
     <div class="footer-bottom">
-      &copy; codingpoets.com | Designed by Awa Melvine
+      &copy; RGU Project 2022 | Designed by Idoko Kadiri
     </div>
   </div>
   <!-- // footer -->
