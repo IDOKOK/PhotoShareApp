@@ -1,18 +1,18 @@
 <?php 
 include("path.php");
-//include(ROOT_PATH . "/app/controllers/topics.php");
+include(ROOT_PATH . "/app/controllers/topics.php");
 
 $posts = array();
 $postsTitle = 'Recent Posts';
 
 if (isset($_GET['t_id'])) {
-//  $posts = getPostsByTopicId($_GET['t_id']);
+  $posts = getPostsByTopicId($_GET['t_id']);
   $postsTitle = "You searched for posts under '" . $_GET['name'] . "'";
 } else if (isset($_POST['search-term'])) {
   $postsTitle = "You searched for '" . $_POST['search-term'] . "'";
- // $posts = searchPosts($_POST['search-term']);
+  $posts = searchPosts($_POST['search-term']);
 } else {
- // $posts = getPublishedPosts();
+  $posts = getPublishedPosts();
 }
 
 ?>
@@ -57,7 +57,7 @@ if (isset($_GET['t_id'])) {
 
         <?php foreach ($posts as $post): ?>
           <div class="post">
-           // <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" class="slider-image">
+            <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" class="slider-image">
             <div class="post-info">
               <h4><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h4>
               <i class="far fa-user"> <?php echo $post['username']; ?></i>
@@ -71,7 +71,7 @@ if (isset($_GET['t_id'])) {
       </div>
 
     </div>
-    <!-- // Post Slider -->
+    <!-- Post Slider -->
 
     <!-- Content -->
     <div class="content clearfix">
@@ -82,7 +82,7 @@ if (isset($_GET['t_id'])) {
 
         <?php foreach ($posts as $post): ?>
           <div class="post clearfix">
-           // <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" class="post-image">
+            <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" class="post-image">
             <div class="post-preview">
               <h2><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h2>
               <i class="far fa-user"> <?php echo $post['username']; ?></i>
@@ -99,12 +99,12 @@ if (isset($_GET['t_id'])) {
 
 
       </div>
-      <!-- // Main Content -->
+      <!-- Main Content -->
 
       <div class="sidebar">
 
         <div class="section search">
-          <h2 class="section-title">Search</h2>
+          <h2 class="section-title">Search Photos</h2>
           <form action="index.php" method="post">
             <input type="text" name="search-term" class="text-input" placeholder="Search...">
           </form>
