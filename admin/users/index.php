@@ -1,5 +1,5 @@
 <?php include("../../path.php"); ?>
-<?php include(ROOT_PATH . "/app/controllers/users.php"); 
+<?php include(ROOT_PATH . "/controllers/controllers/users.php"); 
 adminOnly();
 ?>
 <!DOCTYPE html>
@@ -31,12 +31,12 @@ adminOnly();
 
     <body>
         
-    <?php include(ROOT_PATH . "/app/includes/adminHeader.php"); ?>
+    <?php include(ROOT_PATH . "/controllers/includes/adminHeader.php"); ?>
 
         <!-- Admin Page Wrapper -->
         <div class="admin-wrapper">
 
-        <?php include(ROOT_PATH . "/app/includes/adminSidebar.php"); ?>
+        <?php include(ROOT_PATH . "/controllers/includes/adminSidebar.php"); ?>
 
 
             <!-- Admin Content -->
@@ -48,7 +48,7 @@ adminOnly();
                 <div class="content">
                     <h2 class="page-title">Manage Users</h2>
 
-                    <?php include(ROOT_PATH . "/app/includes/messages.php"); ?>
+                    <?php include(ROOT_PATH . "/controllers/includes/messages.php"); ?>
 
                     <table>
                         <thead>

@@ -1,8 +1,8 @@
 <?php
 
-include(ROOT_PATH . "/app/database/db.php");
-include(ROOT_PATH . "/app/helpers/middleware.php");
-include(ROOT_PATH . "/app/helpers/validateTopic.php");
+include(ROOT_PATH . "/controllers/database/db.php");
+include(ROOT_PATH . "/controllers/helpers/middleware.php");
+include(ROOT_PATH . "/controllers/helpers/validateTopic.php");
 
 $table = 'topics';
 

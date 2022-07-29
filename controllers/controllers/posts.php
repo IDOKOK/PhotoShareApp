@@ -1,8 +1,8 @@
 <?php
 
-include(ROOT_PATH . "/app/database/db.php");
-include(ROOT_PATH . "/app/helpers/middleware.php");
-include(ROOT_PATH . "/app/helpers/validatePost.php");
+include(ROOT_PATH . "/controllers/database/db.php");
+include(ROOT_PATH . "/controllers/helpers/middleware.php");
+include(ROOT_PATH . "/controllers/helpers/validatePost.php");
 
 $table = 'posts';
 

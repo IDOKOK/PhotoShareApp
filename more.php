@@ -1,5 +1,5 @@
 <?php include("path.php"); ?>
-<?php include(ROOT_PATH . '/app/controllers/posts.php');
+<?php include(ROOT_PATH . '/controllers/controllers/posts.php');
 
 if (isset($_GET['id'])) {
   $post = selectOne('posts', ['id' => $_GET['id']]);
@@ -37,7 +37,7 @@ $posts = selectAll('posts', ['published' => 1]);
     src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0">
   </script>
 
-  <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+  <?php include(ROOT_PATH . "/controllers/includes/header.php"); ?>
 
   <!-- Page Wrapper -->
   <div class="page-wrapper">
@@ -98,7 +98,7 @@ $posts = selectAll('posts', ['published' => 1]);
   </div>
   <!-- // Page Wrapper -->
 
-  <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
+  <?php include(ROOT_PATH . "/controllers/includes/footer.php"); ?>
 
 
   <!-- JQuery -->
