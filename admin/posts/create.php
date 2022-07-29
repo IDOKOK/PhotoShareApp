@@ -1,5 +1,5 @@
 <?php include("../../path.php"); ?>
-<?php include(ROOT_PATH . "/app/controllers/posts.php"); 
+<?php include(ROOT_PATH . "/controllers/controllers/posts.php"); 
 adminOnly();
 ?>
 <!DOCTYPE html>
@@ -26,32 +26,32 @@ adminOnly();
         <!-- Admin Styling -->
         <link rel="stylesheet" href="../../assets/css/admin.css">
 
-        <title>Admin Section - Add Post</title>
+        <title>Admin Section - Add Photo</title>
     </head>
 
     <body>
         
-    <?php include(ROOT_PATH . "/app/includes/adminHeader.php"); ?>
+    <?php include(ROOT_PATH . "/controllers/includes/adminHeader.php"); ?>
 
         <!-- Admin Page Wrapper -->
         <div class="admin-wrapper">
 
-        <?php include(ROOT_PATH . "/app/includes/adminSidebar.php"); ?>
+        <?php include(ROOT_PATH . "/controllers/includes/adminSidebar.php"); ?>
 
 
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add Post</a>
+                    <a href="create.php" class="btn btn-big">Add Photos</a>
                     <a href="index.php" class="btn btn-big">Manage Posts</a>
                 </div>
 
 
                 <div class="content">
 
-                    <h2 class="page-title">Add Post</h2>
+                    <h2 class="page-title">Add Photo</h2>
 
-                    <?php include(ROOT_PATH . '/app/helpers/formErrors.php'); ?>
+                    <?php include(ROOT_PATH . '/controllers/helpers/formErrors.php'); ?>
 
                     <form action="create.php" method="post" enctype="multipart/form-data">
                         <div>
@@ -97,7 +97,7 @@ adminOnly();
 
                         </div>
                         <div>
-                            <button type="submit" name="add-post" class="btn btn-big">Add Post</button>
+                            <button type="submit" name="add-post" class="btn btn-big">Submit</button>
                         </div>
                     </form>
 
