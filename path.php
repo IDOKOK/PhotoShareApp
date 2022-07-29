@@ -1,4 +1,4 @@
 <?php
 
 define("ROOT_PATH", realpath(dirname(__FILE__)));
-define("BASE_URL", "http://localhost:8080/PhotoShareApp/PhotoShareApp");
+define("BASE_URL", "http://localhost:9000/PhotoBlog/PhotoShareApp");

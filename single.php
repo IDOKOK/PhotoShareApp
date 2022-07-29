@@ -27,14 +27,14 @@ $posts = selectAll('posts', ['published' => 1]);
   <!-- Custom Styling -->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <title><?php echo $post['title']; ?> | AwaInspires</title>
+  <title><?php echo $post['title']; ?> | Read More</title>
 </head>
 
 <body>
   <!-- Facebook Page Plugin SDK -->
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=285071545181837&autoLogAppEvents=1">
+    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0">
   </script>
 
   <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
@@ -61,11 +61,8 @@ $posts = selectAll('posts', ['published' => 1]);
       <!-- Sidebar -->
       <div class="sidebar single">
 
-        <div class="fb-page" data-href="https://web.facebook.com/codingpoets/" data-small-header="false"
-          data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-          <blockquote cite="https://web.facebook.com/codingpoets/" class="fb-xfbml-parse-ignore"><a
-              href="https://web.facebook.com/codingpoets/">Coding Poets</a></blockquote>
-        </div>
+      <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+    </div>
 
 
         <div class="section popular">
