@@ -1,5 +1,5 @@
 <?php include("../../path.php"); ?>
-<?php include(ROOT_PATH . "/app/controllers/users.php"); 
+<?php include(ROOT_PATH . "/controllers/controllers/users.php"); 
 adminOnly();
 ?>
 <!DOCTYPE html>
@@ -31,12 +31,12 @@ adminOnly();
 
     <body>
         
-    <?php include(ROOT_PATH . "/app/includes/adminHeader.php"); ?>
+    <?php include(ROOT_PATH . "/controllers/includes/adminHeader.php"); ?>
 
         <!-- Admin Page Wrapper -->
         <div class="admin-wrapper">
 
-        <?php include(ROOT_PATH . "/app/includes/adminSidebar.php"); ?>
+        <?php include(ROOT_PATH . "/controllers/includes/adminSidebar.php"); ?>
 
 
             <!-- Admin Content -->
@@ -51,7 +51,7 @@ adminOnly();
 
                     <h2 class="page-title">Edit User</h2>
 
-                    <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
+                    <?php include(ROOT_PATH . "/controllers/helpers/formErrors.php"); ?>
 
                     <form action="edit.php" method="post">
                         <input type="hidden" name="id" value="<?php echo $id; ?>" >

@@ -1,6 +1,6 @@
 <?php 
 include("path.php");
-include(ROOT_PATH . "/app/controllers/topics.php");
+include(ROOT_PATH . "/controllers/controllers/topics.php");
 
 $posts = array();
 $postsTitle = 'Recent Photo blogs';
@@ -39,8 +39,8 @@ if (isset($_GET['t_id'])) {
 
 <body>
 
-  <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
-  <?php include(ROOT_PATH . "/app/includes/messages.php"); ?>
+  <?php include(ROOT_PATH . "/controllers/includes/header.php"); ?>
+  <?php include(ROOT_PATH . "/controllers/includes/messages.php"); ?>
 
 
 
@@ -59,7 +59,7 @@ if (isset($_GET['t_id'])) {
           <div class="post">
             <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" class="slider-image">
             <div class="post-info">
-              <h4><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h4>
+              <h4><a href="more.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h4>
               <i class="far fa-user"> <?php echo $post['username']; ?></i>
               &nbsp;
               <i class="far fa-calendar"> <?php echo date('F j, Y', strtotime($post['created_at'])); ?></i>
@@ -84,14 +84,14 @@ if (isset($_GET['t_id'])) {
           <div class="post clearfix">
             <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" class="post-image">
             <div class="post-preview">
-              <h2><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h2>
+              <h2><a href="more.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h2>
               <i class="far fa-user"> <?php echo $post['username']; ?></i>
               &nbsp;
               <i class="far fa-calendar"> <?php echo date('F j, Y', strtotime($post['created_at'])); ?></i>
               <p class="preview-text">
                 <?php echo html_entity_decode(substr($post['body'], 0, 150) . '...'); ?>
               </p>
-              <a href="single.php?id=<?php echo $post['id']; ?>" class="btn read-more">Read More</a>
+              <a href="more.php?id=<?php echo $post['id']; ?>" class="btn read-more">Read More</a>
             </div>
           </div>    
         <?php endforeach; ?>
@@ -128,7 +128,7 @@ if (isset($_GET['t_id'])) {
   </div>
   <!-- // Page Wrapper -->
 
-  <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
+  <?php include(ROOT_PATH . "/controllers/includes/footer.php"); ?>
 
 
   <!-- JQuery -->
